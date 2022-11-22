@@ -36,7 +36,7 @@ const JobsList = () => {
   if(leng==="es-ES"){
     colorEncabezado="GhostWhite"
   }else{
-    colorEncabezado="Black"
+    colorEncabezado="#484848"
   }
   return (
     <div>
