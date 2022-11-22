@@ -31,12 +31,18 @@ const JobsList = () => {
       visitas: 1056500,
     },
   ]);
-
+  let leng=navigator.language
+  let colorEncabezado
+  if(leng==="es-ES"){
+    colorEncabezado="GhostWhite"
+  }else{
+    colorEncabezado="Black"
+  }
   return (
     <div>
       <table className="table">
         <thead className="thead-dark">
-          <tr>
+          <tr style={{background: colorEncabezado}}>
             <th scope="col">#</th>
             <th scope="col">
               <FormattedMessage id="Position"/>
